@@ -1,10 +1,4 @@
-/** 
-Project: Prime Cab
-Version: 1.01
-Author: ThemesJungle
-Primary use: taxi booking, taxi service,taxi cabs,car rental,online taxi,taxi
 
-Table of Content For Page Sections CSS
 
 00. Header
 01. Inner Banner
@@ -424,7 +418,7 @@ h1,h2,h3,h4,h5,h6{
 .tj-banner-form{
 	float:left;
 	width:100%;
-	background:url("https://www.taxigocabs.in/img/chennai.jpg") no-repeat;
+	background:url("https://miro.medium.com/max/875/0*igE4nU6byCzj4Pgl.jpg") no-repeat;
 	background-size:cover;
 	padding:195px 0;
 	position:relative;
