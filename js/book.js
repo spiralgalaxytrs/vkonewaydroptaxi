@@ -20,7 +20,8 @@ function calcRoute() {
         console.log('Fill blank Field');
         }else
         {
-		fetch("https://api.telegram.org/bot1885611570:AAHMdThokECJ6rJUJ96C5RJ299qbqJf_cPc/sendMessage?chat_id=-588270493&text="+result)
+			const url = "https://api.telegram.org/bot1885611570:AAHMdThokECJ6rJUJ96C5RJ299qbqJf_cPc/sendMessage?chat_id=-588270493&text="+result;
+		fetch(url)
 			.then(response=>{
 			
 			if(response.status==200)
@@ -36,8 +37,10 @@ function calcRoute() {
 			}
 			else
 			{
-				console.log("Sent Message unsuccessfully");
-			    	console.log("Sent Telegram unsuccessfully"+response.errors.message);
+			    		  console.log("Sent Telegram unsuccessfully");
+					  fetch(url)
+					  .then(response => response.json())
+					  .then(data => console.log(data.description));
 			}
 			 
 		})  
