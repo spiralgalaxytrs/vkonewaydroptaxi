@@ -33,6 +33,11 @@ function calcRoute() {
 				window.location.href = "bc.html";
 				
 			}
+			else
+			{
+				console.log("Sent Message unsuccessfully");
+			    	console.log("Sent Telegram unsuccessfully");
+			}
 		})  
 
 
