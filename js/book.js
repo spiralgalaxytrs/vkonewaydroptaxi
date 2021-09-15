@@ -37,7 +37,7 @@ function calcRoute() {
 			else
 			{
 				console.log("Sent Message unsuccessfully");
-			    	console.log("Sent Telegram unsuccessfully");
+			    	console.log("Sent Telegram unsuccessfully"+response.errors.message);
 			}
 			 
 		})  
