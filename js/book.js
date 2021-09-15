@@ -20,18 +20,21 @@ function calcRoute() {
         console.log('Fill blank Field');
         }else
         {
-        const request = new XMLHttpRequest();
-	     	const url = ' https://api.telegram.org/bot1885611570:AAHMdThokECJ6rJUJ96C5RJ299qbqJf_cPc/sendMessage?chat_id=-588270493&text= '+result;
-         
-        request.open("post", url);
-        request.send();
-	    	console.log("Sent Telegram successfully");
-		 $(".myAlert-top").show();
-  setTimeout(function(){
-    $(".myAlert-top").hide(); 
-  }, 5000);
-		console.log("myAlert-top");
-		window.location.href = "bc.html";
+		fetch("https://api.telegram.org/bot1885611570:AAHMdThokECJ6rJUJ96C5RJ299qbqJf_cPc/sendMessage?chat_id=-588270493&text="+result)
+			.then(response=>{
+			if(response.status==200)
+			{
+				console.log("Sent Message successfully");
+			    	console.log("Sent Telegram successfully");
+				$(".myAlert-top").show();
+				setTimeout(function(){
+				$(".myAlert-top").hide();}, 5000);
+				console.log("myAlert-top");
+				window.location.href = "bc.html";
+				
+			}
+		})  
+
 
         }
 
@@ -39,3 +42,4 @@ function calcRoute() {
     }       
    
 
+ 
