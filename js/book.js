@@ -20,7 +20,7 @@ function calcRoute() {
         console.log('Fill blank Field');
         }else
         {
-			const url = "https://api.telegram.org/bot1885611570:AAHMdThokECJ6rJUJ96C5RJ299qbqJf_cPc/sendMessage?chat_id=-588270493&text="+result;
+			const url = "https://api.telegram.org/bot1885611570:AAHMdThokECJ6rJUJ96C5RJ299qbqJf_cPc/sendMessage?chat_id=-1001584909043&text="+result;
 		fetch(url)
 			.then(response=>{
 			
